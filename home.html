@@ -5,42 +5,340 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corbin's ePortfolio</title>
     <link rel="stylesheet" href="/eportfolio/home.css">
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="node_modules/codemirror/theme/the-matrix.css">
+
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+    <script src="node_modules/codemirror/mode/xml/xml.js"></script>
+    
 </head>
-<body>
+<body class="page-home">
 
     <div class="main-box">
     
         <div class="home-intro">
-            <h1>Hello, I am Corbin and welcome to my page!</h1>
+            <h1>Corbin Harrison's ePortfolio</h1>
+            <button class="intro-button"><a href="https://github.com/codingWithCorbin" target="_blank">GitHub</a></button>
         </div>
+
+        <hr class="top-break">
 
         <div class="self-assessment-main">
 
-            <p>Assessment</p>
+            <h1>Professional Self-Assessment</h1>
+
+            <div class="assessment-section">
+                <p>
+
+                    Completing coursework throughout the computer science program has helped me gain many valuable skills and knowledge amongst different areas/ specialties. 
+                    I am able to plan and build programming diagrams and ultimately complete products through code. 
+                    The courses have provided a solid foundation in Python, Java, and C++ enabling me to further improve my skills as I have been able to complete personal projects and continue adding more skills.
+                    These foundations have also helped me prepare for my career as I continue working toward Full-Stack Development, AI Engineering, and DevOps specialties. 
+                    Through the completion of this ePortfolio, it combines skills that I learned through my courses and personal experiences. 
+                </p>
+
+
+                <p>
+                    Many courses provided the opportunity to take on specific roles within a team.
+                    In CS 250, I was able to complete assignments as developer, project manager, tester, and scrum master.
+                    I experienced how each member’s responsibilities differ and affect others in the process as a whole.
+                    I also learned the importance of milestones, procedures, and philosophy of the development frameworks, like Waterfall and Agile methodologies.
+                    I further applied the testing role in CS 320 as I developed and tested code in Java. 
+                    This ensured that requirements in the development process were implemented; for example, customer services classes were developed and tested if the constructor and functionality were correct and supported by complete/high testing coverage results.
+                    In MATH 230, I created various products through data analytics in Python to answer basketball coaches’ questions and to support changes to the team.
+                    I used graphing and statistics in code to communicate data and solutions. 
+                    Work completed in CS 465 focused on the importance of tracking and working with different versions of a project through Git. 
+                    Through the progress of the project, I learned how to get code from a repository, create branches as new features were developed, and submit them to remote main branches.
+                    I have continued learning Git since it is important in a team environment for a project. I continue to improve my experience with understanding merge conflicts, reverting branches, logging activity, etc. 
+                </p>
+
+
+                <p>
+                    There are many courses that support my communication skills with stakeholders. My work in CS 319 best demonstrates these skills. 
+                    I created wireframes and screen flow diagrams for an app to monitor tree/ plant health. I performed real interviews with my family members as to what features that they wanted or not.
+                    I created the initial designs for the app and performed another round of interviews to get feedback.
+                    This experience shows my ability to collect, interpret, and refine information from stakeholders. Another important experience in working with stakeholders is shown through CS 255.
+                    I created a requirements document reviewing various elements from the situation such as limitations, security, performance, system goals, etc.
+                    I also worked with Gant charts to understand timelines for a project and what stakeholders are expecting at certain times.
+                    I created a diagram for use cases, activities, detailed explanations of how to implement role-based requirements for the system, and a presentation to effectively communicate with stakeholders.
+                    Similarly, in CS 230 I also worked through a detailed template with more focus on what software and hardware would be needed for a project.
+                    I reviewed and recommended operating systems, storage solutions, client-side needs, server needs, etc.
+                    This wide variety of experience shows that I can work with clients and stakeholders at different stages and with different concepts.
+                </p>
+
+
+                <p>
+                    I am able to show my skills with data structures and algorithms through CS 300. I planned and coded solutions for vectors, linked lists, hash tables, and binary search trees.
+                    For the final project, I chose to implement a binary search tree through performing an analysis on the time complexity between the options available.
+                    As efficient code and solutions are a must for employers, I am able to show that I can reason through specific use cases and identify where changes can make code faster.
+                    I have continued learning/ expanding on these concepts with queues, stacks, doubly linked lists, etc.
+                    I also practice with Leet Code problems to better understand and identify the best solution for a problem and prepare for interview problems.
+                    My work in creating an AI agent in CS 370 shows more complex understanding of improving solutions.
+                    My first attempt at creating the agent to get to the goal was not successful due to ineffective memory use and choices.
+                    However, in the creation of the second attempt for the final project, I was able to determine how to start the algorithm and adjust it accordingly through each training iteration to achieve a 100% success rate in getting to the goal.
+                    This class inspired me to learn more areas in AI development as I currently work with various models in machine learning and libraries such as LangChain. 
+                </p>
+
+
+                <p>
+                    Mostly every class supported software engineering in some aspect. Diagrams, reports, and presentations through each class provided areas to show conceptual knowledge and projects enabled me to demonstrate practical knowledge.
+                    The ePorfolio demonstrates this well as I was able to improve and expand on many elements of the original artifact based on specific plans like the pricing tool and profile requirements.
+                    Another example is through mobile application development in CS 360. This provided many examples of my abilities in software engineering though planning a full-stack inventory application for Android and building it with Java and MySQL.
+                    I considered many different users and their needs and created a solution that was suitable for most users. 
+                    I also demonstrated I can work with different user input scenarios such as how the app differs when a user selects to use text notifications or not.
+                    The scene that I developed in CS 330 shows that I can work with complex objects in a 3D environment.
+                    It also shows my variability in that I can program game elements as well. This class has led me to many different areas of software engineering in a 3D space.
+                    I continue to improve on these concepts with projects using libraries such as Three.js to program 3D scenes in a web development focus to create more interactive experiences.
+                </p>
+
+                <p>
+
+                    I am able to demonstrate my database skills with both relational and nonrelational databases. 
+                    For relational database use, I first developed MySQL query and analysis skills in the DAD 220 course. 
+                    I used MySQL to create databases, tables, entries, and modifications. Using various methods to compare/ join tables, I created reports about the tables for products, customers, and locations.
+                    I used MySQL further when developing the inventory app creating storage for users and items. This had the addition of user interactions with the UI and appropriately utilize the data to create users, create their items, and modify/ delete the items.
+                    If the user consented to text notifications, the app would notify users that an item was depleted when reaching zero in the database. 
+                    As for nonrelational databases, I learned how to use MongoDB in CS 340. I created CRUD operations in Python for the animal rescue web application and provided a detailed “README” file to describe how the database it used, test code for the database operations, and examples.
+                    The table returned from the database had inherent filtering capabilities, and the longitude and latitude data used from the database pinpointed the area on the map where the animal was located.
+                    I further developed my skills using MongoDB for the ePorfolio project with more efficiency, capabilities, and security.
+                    Being able to work with multiple types of databases and for different purposes, such as data analysis and app development, creates more opportunities for me. 
+
+                </p>
+
+
+                <p>
+                    Throughout my courses, security was considered in a few different ways. In CS 305, I learned how to analyze and interpret results from the dependency check tool. 
+                    I was then able to research the potential issues and what fixes were needed. This is important in a professional setting as understanding and mitigating risk through supported research helps secure software.
+                    I was also able to develop skills in using and testing “HTTPS” protocol by creating signed certificates. In CS 405, I learned how to navigate specific coding risks. 
+                    I located and fixed issues such as SQL injection risks, overflow, and out of bounds errors. I also created tests to check for unsecure code.
+                    My ability to detect, research, test, and fix code are valuable skills in all computer science disciplines. 
+                </p>
+
+                <p>
+
+                    To show many of these skills in a comprehensive project, I created a full-stack application in JavaScript.
+                    The artifact demonstrates all three skills of software engineering and design, data structures and algorithms, and databases. 
+                    Immediately below is the original code and resulting slideshow for the early product in the simulated development process for the client “SNHU Travel”.
+                    I continued the development process to complete the application using the MERN (MongoDB, Express, React, and Node JS) stack. 
+                    I first started with requirements that were not yet created but were priorities for the simulated client. These were communicated in user stories and expectations.
+                    Based on this information, I created the web application layout and features as if I were working with stakeholders/clients. 
+                    For software engineering and design, I developed an interactive frontend component and a supporting backend server API. 
+                    The React components enabled user account functionality, navigating/ searching vacations, and updating information as needed. 
+                    This is supported by many data structure and algorithm considerations in the Express/Node JS server improving app performance with using arrays to filter and limit data and through paginating search results.
+                    The MongoDB database for the app contains user data and vacation data. Users create an account with specific preferences, and these are used when creating their accounts to reference the databases. 
+                    Users have many operations available to them including creating an account, modifying their account preferences, researching price inputs, and updating their top vacation choices.
+                    Finally, the app is secured both on the frontend and backend. User inputs are limited to protect against malicious entries, data integrity is checked on the server side to ensure it is correct/valid, schema creation to restrict information to specific formats/ types, user’s passwords are encrypted and never stored in API responses, and error handling is fully controlled.
+                    Many of app’s features are demonstrated in the “Enhancement” section below.  
+
+                </p>
+                
+            </div>
 
         </div>
 
+        <div class="navbar">
+            <a href="#artifact-main"><h2>Original Artifact</h2></a>
+            <a href="#codereview-main"><h2>Code Review</h2></a>
+            <a href="#narrative-main"><h2>Narratives</h2></a>
+            <a href="#enhancement-main"><h2>Enhancement</h2></a>
+        </div>
 
+        
         <div class="sections-main">
 
-            <div class="narrative-main">
+            <div class="artifact-main" id="artifact-main">
 
-                <p>Narratives</p>
+                <h1>Original Artifact</h1>
+
+                <div class="jar-and-code">
+
+                    <div class="artifact-codearea">
+
+                        <h2>Slide Show Code</h2>
+
+                        <textarea class="artifact-code" id="artifact-code"></textarea>
+                        <script>
+                            
+                            var editor = CodeMirror.fromTextArea(document.getElementById("artifact-code"), {
+                                mode: "text/x-java",
+                                readOnly: true,
+                                theme: "the-matrix",
+                                lineNumbers: true
+                            })
+
+                            editor.setSize("100%", "500px")
+
+                            fetch("./code/SlideShow.java")
+                                .then(response => response.text())
+                                .then(content => {
+
+                                    editor.setValue(content)
+                                })
+
+                        </script>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>Slide Show Jar</h2>
+
+                        <div class="overall-jar" >
+                            <div class="artifact-jar" id="artifact-jar">
+                                 <script>
+                                    (async function () {
+                                        const jarComponent = document.getElementById("artifact-jar")
+                                        await cheerpjInit();
+                                        cheerpjCreateDisplay(800, 600, jarComponent);
+                                        await cheerpjRunJar("/app/SlideShowJar.jar");
+                                    })();
+                                </script>
+                            </div>
+
+                            <div class="jar-info">
+
+                                <div class="jar-text">
+                                    <p>The artifact is a slide show displaying a user's top five vacation locations.
+                                         Each has an image, location, and description. Users can naviagte forward and backward through the list. However, there are serveral limitations:
+                                        <ul>
+                                            <li>Limited Vacations</li>
+                                            <li>No Scalability</li>
+                                            <li>Minimal Personalization</li>
+                                            <li>No Database</li>
+                                            <li>Zero Search Functionality</li>
+                                        </ul>
+
+                                        With the enhancements to the code, it provides a better user experience.
+                                        The enhancements bring the following features:
+
+                                        <ul>
+                                            <li>Profile Creation and Modification</li>
+                                            <li>Vacation Preferences</li>
+                                            <li>Pricing Personalization</li>
+                                            <li>Updateable Favorites List</li>
+                                            <li>Efficient Vacation Searches</li>
+                                            <li>Vacation and User Storage</li>
+
+                                        </ul>
+
+                                    </p>
+                                </div>
+
+                                <button class="jar-download"><a href="/SlideShowJar.jar" download>Download Jar</a></button>
+
+                            </div>
+                           
+                        </div>
+                        
+                     
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="codereview-main">
+            <div class="codereview-main" id="codereview-main">
 
-                <p>Code Review</p>
+                <h1>Code Review</h1>
+
+                <div>
+                    <video controls class="codereview-video" src="./components/CS 499 - Milestone One - Code Review.mp4"></video>
+                </div>
                 
             </div>
 
 
-            <div class="artifact-main">
+            <div class="narrative-main" id="narrative-main">
 
-                <p>Artifacts</p>
+            
+                <h1>Narratives</h1>
+
+                <div class="narrative-frame-buttons">
+
+                    
+                    <div class="narrative-all">
+                        <div class="narrative-1">
+                            <button id="narrative-1">Software Design and Engineering</button>
+                        </div>
+
+                        
+                        <div class="narrative-2">
+                            <button id="narrative-2">Data Structures and Algorithms</button>
+                        </div>
+
+                        <div class="narrative-3">
+                            <button id="narrative-3">Databases</button>
+                        </div>
+
+                    </div>
+
+
+                    <iframe id="narrative-viewer" src="./narratives/Software Design and Engineering Narrative.pdf" type="application/pdf" class="narrative-viewer"></iframe>
+
+
+                </div>
                 
+            </div>
+
+
+            <div class="enhancement-main" id="enhancement-main">
+               
+
+                <div class="enhancement-link">
+                    <h1>Enhancement</h1>
+                    <button class="link-button"><a href="https://github.com/codingWithCorbin/SNHU-Travel" target="_blank">GitHub Repository &#8594;</a></button>
+                </div>
+                
+
+                <div class="gif-main">
+
+                    <div style="height: 550px;" class="gif">
+                        <div class="gif-title-button">
+                            <h2>Navigate & Search Vacations</h2>
+                            <button class="gif-button">Collapse</button>
+                        </div>
+                        <img style="display: block;" id="gif-img" src="./gifs/homepage-gif.gif">
+                    </div>
+
+                    <div style="height: 550px;" class="gif">
+                        <div class="gif-title-button">
+                            <h2>User Accounts & Stored Preferences</h2>
+                            <button class="gif-button">Collapse</button>
+                        </div>
+                        
+                        <img style="display: block;" id="gif-img" src="./gifs/signup-gif.gif">
+                    </div>
+
+                    <div style="height: 550px;" class="gif">
+                        <div class="gif-title-button">
+                            <h2>Customized Profiles & Favorites</h2>
+                            <button class="gif-button">Collapse</button>
+                        </div>
+                        <img style="display: block;" id="gif-img" src="./gifs/profile-gif.gif">
+                    </div>
+
+                    <div style="height: 550px;" class="gif">
+                        <div class="gif-title-button">
+                            <h2>Price Filtering</h2>
+                            <button class="gif-button">Collapse</button>
+                        </div>
+                        <img style="display: block;" id="gif-img" src="./gifs/pricingtool-gif.gif">
+                    </div>
+
+                    <div style="height: 550px;" class="gif">
+                        <div class="gif-title-button">
+                            <h2>Update Profile</h2>
+                            <button class="gif-button">Collapse</button>
+                        </div>
+                        <img style="display: block;" id="gif-img" src="./gifs/settings-gif.gif">
+                    </div>
+
+                </div>
             </div>
 
 
@@ -48,6 +346,7 @@
    
     </div>
 
-
+    <script src="index.js"></script>
+    
 </body>
 </html>

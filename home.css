@@ -1,23 +1,353 @@
 
+/* overall */
 
-.main-box{
+html{
+    margin: 0;
+    padding:0;
+    color: rgb(255, 227, 71);
+   
+}
 
+a, a:visited{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.page-home{
+    background-color: rgb(64, 85, 85);
+    opacity: 95%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 
 
+.main-box{
+
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+
+
+/* intro */
+
+.top-break{
+
+    width: 90%;
+    height: 1px;
+    background-color: rgba(247, 247, 235, 75%);
+}
+
 .home-intro{
 
     font: bold;
+    display: flex;
+    place-items: center;
     
 
 }
 
 
+.home-intro, h1{
+
+    font-size: xxx-large;
+}
+
+
+.intro-button{
+    background-color: greenyellow;
+    height: 3rem;
+    width: max-content;
+    padding: 7px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* assessment */
+
+.assessment-section{
+    background-color: rgba(247, 247, 235, 65%);
+    height: 500px;
+    border-radius: 0.2em;
+    padding: 20px;
+    overflow-y: scroll;
+    margin-bottom: 75px;
+}
+
+
+.assessment-section p{
+
+    color: black;
+    font-size: x-large;
+    text-indent: 50px;
+   
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(247, 247, 235, 75%);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px rgb(97, 97, 97);
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 50px;
+    place-items: center;
+    
+}
+
+.navbar h2{
+
+    color: black;
+
+
+}
+
+.navbar a{
+
+    text-decoration: none;
+}
+
+.navbar h2:hover{
+
+    color: rgb(17, 80, 255);
+    cursor: pointer;
+    
+    
+}
+
+
+
+/* sections */
+
 .sections-main{
 
     display: flex;
-    gap: 20rem;
+    flex-direction: column;
+    gap: 10rem;
 }
+
+/* original artifact */
+
+.artifact-main{
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    
+}
+
+.artifact-codearea{
+    
+    width: 100%;
+    height: 100%
+    
+}
+
+.jar-and-code{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+
+.overall-jar{
+
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.jar-info{
+
+  
+   width: 100%;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+
+}
+
+
+
+.jar-text{
+    background-color: rgba(247, 247, 235, 75%);
+    border: 2px solid gainsboro;
+    color: black;
+    height: 90%;
+    width: 100%;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: large;
+}
+
+
+.jar-download{
+
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    border-radius: 0.5em;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+/* narratives */
+
+.narrative-main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.narrative-viewer{
+    background-color: red;
+    height: 700px;
+    width: 100%;
+}
+
+
+.narrative-frame-buttons{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.narrative-all{
+
+    display: flex;
+    place-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.narrative-all button{
+
+    background-color: greenyellow;
+    height: 3rem;
+    width: max-content;
+    padding: 7px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+
+
+
+/* code review */
+
+.codereview-main{
+   
+}
+
+.codereview-video{
+
+    height: auto;
+    width: 100%;
+} 
+
+
+/* enchancement */
+
+.enhancement-main{
+
+    margin-bottom: 10rem;
+}
+
+.enhancement-link{
+
+    margin-bottom: 3rem;
+    display: flex;
+    place-items: center;
+    
+   
+}
+
+.link-button{
+
+    background-color: greenyellow;
+    height: 3rem;
+    width: max-content;
+    padding: 7px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-left: auto;
+   
+}
+
+.gif-main{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+
+
+.gif{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border: none;
+    padding: 5px;
+    height: 550px;
+    
+    
+}
+
+
+#gif-img{
+    
+    height: 500px;
+    width: 75%;
+    
+}
+
+
+.gif-title-button{
+    display: flex;
+    place-items: center;
+    background-color: rgba(247, 247, 235, 75%);
+    font-size: large;
+    width: 73.5%;
+    color: black;
+    padding: 10px;
+    border-radius: 0.2em;
+    border-bottom: 1px solid black;
+}
+
+.gif-title-button button{
+    background-color: greenyellow;
+    height: 3rem;
+    width: max-content;
+    padding: 7px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
